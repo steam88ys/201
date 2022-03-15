@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="03swtich.c" />
     <ClCompile Include="04함수의 선언과 정의.c" />
+    <ClCompile Include="05논리연산자.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="o4.h" />
