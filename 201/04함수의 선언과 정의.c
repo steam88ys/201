@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "04.h"
 
 int main(void)
 {
