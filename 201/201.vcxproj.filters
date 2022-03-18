@@ -18,5 +18,8 @@
     <ClCompile Include="C++기본\00C++기본.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="C기본\05논리연산자 - 복사본.c">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
