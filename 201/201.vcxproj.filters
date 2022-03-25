@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C기본\18 반복문.c">
+    <ClCompile Include="C기본\static 변수.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
