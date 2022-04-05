@@ -1,5 +1,5 @@
 #include <iostream>	
-using namespace std; 
+using namespace std;
 
 // pre컴파일러가 처리
 // 자료형 영향받지 않음
