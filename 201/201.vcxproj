@@ -19,10 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C++기본\02 - 03 참조.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="C++기본\02 - 04 참조2.cpp" />
+    <ClCompile Include="C++기본\02 - 05 함수 오버로딩.cpp" />
+    <ClCompile Include="C++기본\02 - 05.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C++기본\02 - 05.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
