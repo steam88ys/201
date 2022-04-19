@@ -10,6 +10,12 @@ int main(void)
 	printf("%s \n", cI);	// aaa
 
 	string cppI = "aaa";
+	printf("%s \n", cppI);	// ÁÖ¼Ò°ª
 	printf("%s \n", cppI.c_str());	// aaa
+
 	cout << cppI.c_str() << endl;	// aaa
+
+	string cppMunja = "cpp+insert";
+	cout << cppMunja << endl;
+	cout << cppMunja.c_str() << endl;
 }
