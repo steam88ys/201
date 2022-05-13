@@ -22,7 +22,7 @@ Student::Student()
 {
 	this -> nHakbun = 1234;
 	this -> sName = "이사랑";
-	cout << "학번이 등록되었습니다." << endl;
+	cout << "일반생성자 생성." << endl;
 }
 
 // 멤버변수를 초기화 할 수 있으며, 
@@ -32,7 +32,7 @@ Student::Student(int Hakbun, string Name)
 {
 	this -> nHakbun = Hakbun;
 	this -> sName = Name;
-	cout << "학번이 등록되었습니다." << endl;
+	cout << "일반생성자 생성." << endl;
 }
 
 void Student::show()
@@ -44,10 +44,13 @@ void Student::show()
 int main(void)
 {
 
-	Student* stu2 = new Student(1111, "KYS");
-	stu2->show();
-
-	delete stu2;
+	Student* stu2 = new Student[6];
+	for (int i = 0; i < 6; i++) {
+		stu2[i].show();	// stu[i] : *(stu+i)
+						// 이미 *연산자가 있어서 ->를 안 씀
+	}
+	
+	delete []stu2;
 
 	return 0;
 
