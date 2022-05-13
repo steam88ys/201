@@ -49,10 +49,13 @@ int main(void)
 	Student stu2 = Student(1111, "KYS");
 	stu2.show();*/
 
-	int*  ptr1 = new int;
-	*ptr1 = 20;
-	cout << *ptr1 << endl;
-	delete ptr1;
+	int* ptr2 = new int[4];
+	for (int i = 0; i < 4; i++) {
+		ptr2[i] = 10 + i;
+		cout << ptr2[i] << " ";
+	}
+
+	delete []ptr2;
 
 	return 0;
 
