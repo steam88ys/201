@@ -43,10 +43,17 @@ void Student::show()
 
 int main(void)
 {
-	Student stu1 = Student();
+	/*Student stu1 = Student();
 	stu1.show();
 
 	Student stu2 = Student(1111, "KYS");
-	stu2.show();
+	stu2.show();*/
+
+	int*  ptr1 = new int;
+	*ptr1 = 20;
+	cout << *ptr1 << endl;
+	delete ptr1;
+
+	return 0;
 
 }
