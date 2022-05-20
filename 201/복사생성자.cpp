@@ -6,6 +6,7 @@ using namespace std;
 class Person {					// Person 클래스
 private:
 	string sName;
+protected:
 	int nAge;
 public:
 	Person();
@@ -14,6 +15,7 @@ public:
 };		
 
 class Student : public Person {	// Student 클래스 (Person 상속)
+private:
 	int nHakbun;
 public:
 	Student();
@@ -45,6 +47,7 @@ void Person::hi () {
 void Student::study() {
 	hi();
 	cout << "학번: " << nHakbun << endl << endl;
+	nAge = 100;
 }
 
 int main(void) {
@@ -58,6 +61,9 @@ int main(void) {
 	Person* people = new Person[5];
 	people[0].hi();
 	delete[] people;
+
+	Student stu;
+	stu.study();
 
 	return 0;
 }
