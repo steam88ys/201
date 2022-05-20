@@ -23,6 +23,20 @@ public:
 	void study();
 };
 
+class CBox {
+private:
+	double width;
+public :
+	void setWidth(double w) {
+		width = w;
+	}
+};
+class ChildBow : CBox {
+	void setWidth2(){
+		setWidth(100);
+ }
+};
+
 Person::Person()
 {
 	sName = "¿Õ∏Ì";
