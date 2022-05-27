@@ -36,11 +36,14 @@ Student::Student(int Hakbun, const char* Name)
 	strcpy(sName, Name);
 }
 
-// 직접 작성 안해도 컴파일러가 알아서 만들어주는
-// 복사생성자
-Student::Student(const Student& rhs)
+// 복사생성자 (깊은 복사)
+Student::Student(const Student& rhs)	// righthandside (stu1)
 	:nHakbun(rhs.nHakbun), sName(rhs.sName)
 {
+	cout << "복사생성자 호출" << endl;
+	int len = strlen(rhs.sName) + 1;
+	sName = new char[len];
+	strcpy(sName, rhs.sName);
 }
 
 Student::~Student()
@@ -60,7 +63,7 @@ int main(void)
 	// "일반생성자 호출" 출력
 	Student stu1 = Student(1111, "JWP");
 	// (1111, "JWP")가 복사됨. 일반생성자 호출X
-	Student stu2 = Student(stu1);
+	Student stu2 = stu1; // Student stu2 = Student(stu1);
 
 	stu1.show();
 	stu2.show();
