@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C++기본\03-01 class 생성자.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="깊은복사_2102김윤서.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -29,6 +26,12 @@
     </ClCompile>
     <ClCompile Include="04-01 연산자 오버로딩%28기본%29.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="04-01.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="04-01.h">
+      <Filter>헤더 파일</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
