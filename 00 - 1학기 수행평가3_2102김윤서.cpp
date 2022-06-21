@@ -87,14 +87,14 @@ m_string m_string::operator+(const m_string& rhs) {
     return answer;
 }
 
-int m_string::size() {
+int m_string::size() {  // size함수 구혐
     return _Mysize - 1;
 }
-int m_string::length() {
+int m_string::length() {    // length함수 구현
     return _Mysize - 1;
 }
-char* m_string::c_str() {
-    return _Myptr;
+char* m_string::c_str() {   // c_str함수 구현
+    return _Myptr; // 주소값 출력
 }
 
 int main(void)
@@ -117,6 +117,9 @@ int main(void)
     cout << (str1 == "123") << endl; //0
 
     cout << (str1 == str2) << endl; //-1
+
+    cout << str1.c_str() << endl;
+    cout << str2.c_str() << endl;
 
     return 0;
 }
