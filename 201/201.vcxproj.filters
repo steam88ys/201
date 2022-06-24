@@ -15,11 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C++기본\04-03 대입연산자 오버로딩.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="176p 풀어보기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="C++기본\00 - 1학기 수행평가3_2102김윤서.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C++기본\00 - 클래스 설계%282102%29.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
