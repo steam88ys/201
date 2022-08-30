@@ -15,16 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C++기본\수행평가3_2102김윤서.cpp">
+    <ClCompile Include="06 - 01 다형성기본.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="m_string.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="C++기본\00 - 클래스 설계%282102%29.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
