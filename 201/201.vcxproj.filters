@@ -33,5 +33,8 @@
     <ClCompile Include="07 - 02 클래스 템플릿.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="코드짜보기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
