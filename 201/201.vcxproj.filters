@@ -24,5 +24,8 @@
     <ClCompile Include="06 - 03 순수가상함수.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="07 - 01 함수템플릿.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
