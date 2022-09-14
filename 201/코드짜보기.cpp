@@ -3,8 +3,24 @@
 
 using namespace std;
 
+template <typename T>
+class MyData {
+public:
+	void setData(T pdata)
+	{
+		mydata = pdata;
+	}
+	T getData()
+	{
+		return mydata;
+	}
+
+private:
+	T mydata;
+};
+
 class Character {
-public: 
+public:
 	string name;
 	int strength;
 	int attack;
@@ -27,6 +43,7 @@ void Character::out() {
 int main(void)
 {
 	Character* ch1 = new Character("±èÀ±¼­", 5, 6, 1);
+
 	ch1->out();
 	delete ch1;
 }
