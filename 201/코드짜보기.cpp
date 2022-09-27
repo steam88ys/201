@@ -3,47 +3,32 @@
 
 using namespace std;
 
-template <typename T>
-class MyData {
+template <typename T1, typename T2>
+class Character {
 public:
-	void setData(T pdata)
-	{
-		mydata = pdata;
-	}
-	T getData()
-	{
-		return mydata;
+	Character(T1 na, T2 str, T2 at, T2 de) 
+		: name(na), strength(str), attack(at), defense(de) {}
+
+	void out() {
+		cout << "이름: " << name << endl;
+		cout << "체력: " << strength << endl;
+		cout << "공격: " << attack << endl;
+		cout << "방어: " << defense << endl;
 	}
 
 private:
-	T mydata;
+	T1 name;
+	T2 strength;
+	T2 attack;
+	T2 defense;
 };
-
-class Character {
-public:
-	string name;
-	int strength;
-	int attack;
-	int defense;
-	Character(string Cname, int Cstrength, int Cattack, int Cdefense);
-	void out();
-};
-
-Character::Character(string Cname, int Cstrength, int Cattack, int Cdefense)
-	:name(Cname), strength(Cstrength), attack(Cattack), defense(Cdefense) {
-}
-
-void Character::out() {
-	cout << "이름: " << name << endl;
-	cout << "체력: " << strength << endl;
-	cout << "공격: " << attack << endl;
-	cout << "방어: " << defense << endl;
-}
 
 int main(void)
 {
-	Character* ch1 = new Character("김윤서", 5, 6, 1);
+	Character<string, int>* ch = new Character<string, int>("AAA", 10, 5, 3);
+	ch->out();
 
-	ch1->out();
-	delete ch1;
+	delete ch;
+	
+	return 0;
 }
