@@ -17,8 +17,8 @@ int main(void)
 	IBW["권민우"] = "주종혁";
 	IBW["이준호"] = "강태오";
 
-	for (auto iter = IBW.begin(); iter != IBW.end(); iter++)
-		cout << iter->first << "역 " << iter->second << "분" << endl;
+	for (auto& iter : IBW)
+		cout << iter.first << "역 " << iter.second << "분" << endl;
 
 	//  "우영우"란 key를 가지는 interator
 	map<string, string>::iterator main_person = IBW.find("우영우");
