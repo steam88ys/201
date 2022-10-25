@@ -6,8 +6,8 @@ using namespace std;
 void main(void)
 {
 	int arr[4] = { 10, 20, 30, 40 };
-	for (int i = 0; i < sizeof(arr)/sizeof(int); i++)
+	for (int x : arr)
 	{
-		cout << arr[i] << "  " ;
+		cout << x << "  " ;
 	}
 }
