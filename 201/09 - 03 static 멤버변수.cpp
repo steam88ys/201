@@ -6,12 +6,9 @@ using namespace std;
 class Champ {
 public:
 	Champ(int age, const string& name);
-	static int getCount(void)
-	{	
-		// 에러, static 멤버함수에는 static 멤버변수만 사용가능
-		// _age++;
-		return mCount;
-	}
+
+	static int getCount(void);
+
 private:
 	int _age;
 	string _name;
@@ -24,6 +21,13 @@ Champ::Champ(int age, const string& name)
 	: _age(age), _name(name)
 {
 	++mCount;
+}
+
+int Champ::getCount(void)
+{
+	// 에러, static 멤버함수에는 static 멤버변수만 사용가능
+	// _age++;
+	return mCount;
 }
 
 void main(void)
